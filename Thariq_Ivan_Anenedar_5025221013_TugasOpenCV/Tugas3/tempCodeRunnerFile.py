@@ -1,1 +1,0 @@
-/home/ivan/magang-opencv/MagangBayu2023-OpenCV/Thariq_Ivan_Anenedar_5025221013_TugasOpenCV/Tugas3/tugas3_done.jpg
