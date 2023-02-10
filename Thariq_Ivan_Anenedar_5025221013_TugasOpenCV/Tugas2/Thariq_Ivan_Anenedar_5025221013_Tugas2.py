@@ -11,7 +11,7 @@ img = cv.GaussianBlur(img, (5, 5), 0)
 hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 
 # Define range of blue color in HSV
-lower_blue = np.array([140, 100, 50])
+lower_blue = np.array([140, 125, 50])
 upper_blue = np.array([170, 255, 255])
 
 # Threshold the HSV image to get only blue colors
@@ -42,7 +42,7 @@ x_akhir, y_akhir = 0, 0
 
 # Get coordinate of lowest and highest contour that found
 for j in n :
-    # Checking every 2 coodinate and check for lowest and highest contour
+    # Checking every coodinate and check for lowest and highest contour
     if(i % 2 == 0):
         x = n[i]
         y = n[i + 1]
@@ -72,7 +72,7 @@ cv.putText(hasil, string, (1035, 435),cv.FONT_ITALIC, 0.5, (0, 0, 0), 1)
 # Add circle at center point
 hasil = cv.circle(hasil, (int(x_coor),int(y_coor)), radius=0, color=(0, 0, 255), thickness=3)
 # Draws boundary of contours.
-cv.drawContours(hasil, contours, -1, (255, 0, 0), 2)
+cv.drawContours(hasil, contours, -1, (255, 0, 0), 3)
 # Showing the final image.
 cv.imshow('image3', hasil) 
 # Save final image
