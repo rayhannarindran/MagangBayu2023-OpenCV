@@ -12,7 +12,7 @@ hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 # Apply median blur . I tested gaussian blur and median blur, and the result is better on median blur
 blured = cv.medianBlur(hsv, 5)
 
-# Define the range of blue color in HSV color space
+# Define the range of pink color in HSV color space
 lower_pink = np.array([146, 100, 50])
 upper_pink = np.array([162, 255, 255])
 
