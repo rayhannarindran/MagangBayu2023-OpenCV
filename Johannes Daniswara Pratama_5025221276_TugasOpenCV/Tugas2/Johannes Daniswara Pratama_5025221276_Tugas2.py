@@ -43,9 +43,9 @@ for i in contours:
         # Draw the contour on the image (blue)
         cv.drawContours(img, [i], 0, (255, 0, 0), 5)
 
-# Show the resulting image
-cv.imshow("Original", img)
 # Save the image
 cv.imwrite("Johannes Daniswara Pratama_5025221276_TugasOpenCV/Tugas2/tugas2_done.jpg",img)
+# Show the resulting image
+cv.imshow("Original", img)
 cv.waitKey(0)
 cv.destroyAllWindows()

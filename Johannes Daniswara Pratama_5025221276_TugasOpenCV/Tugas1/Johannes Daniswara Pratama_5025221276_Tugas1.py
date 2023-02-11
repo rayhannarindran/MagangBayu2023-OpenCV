@@ -30,9 +30,9 @@ result4 = cv.addWeighted(part4, 1, mask4, 0.7, 0)
 # Combine the results back into a single image
 result = np.concatenate((np.concatenate((result1, result2), axis=1), np.concatenate((result3, result4), axis=1)), axis=0)
 
-# Show the resulting image
-cv.imshow('shape', result)
 # Save the image
 cv.imwrite("Johannes Daniswara Pratama_5025221276_TugasOpenCV/Tugas1/tugas1_done.jpg",result)
+# Show the resulting image
+cv.imshow('shape', result)
 cv.waitKey(0)
 cv.destroyAllWindows()

@@ -33,7 +33,6 @@ for i in contours:
         cv.putText(img, f"{len(corner)}", (40,100), cv.FONT_HERSHEY_DUPLEX, 3, (0, 0, 0), 3)
 
 
-
 # Save the image
 cv.imwrite("Johannes Daniswara Pratama_5025221276_TugasOpenCV/Tugas3/tugas3_done.jpg",img)
 # displaying the image after drawing contours
