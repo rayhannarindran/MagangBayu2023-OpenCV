@@ -21,7 +21,7 @@ mask2 = np.full(part2.shape, (0, 0, 255), dtype=np.uint8)# Red color
 mask3 = np.full(part3.shape, (0, 255, 255), dtype=np.uint8) # Yellow color
 mask4 = np.full(part4.shape, (255, 0, 0), dtype=np.uint8) # Blue color
 
-# Apply the green mask to all part with thickness of 0.7
+# Apply the green, red , yellow , and blue mask to corresponding part with thickness of 0.7
 # More info on cv.addWeighted : https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html  -> opencv documentation
 result1 = cv.addWeighted(part1, 1, mask1, 0.7, 0)
 result2 = cv.addWeighted(part2, 1, mask2, 0.7, 0)
